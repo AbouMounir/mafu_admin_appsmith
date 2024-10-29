@@ -1,6 +1,6 @@
 {
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 4,
+  "bottomRow": 5,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
@@ -17,20 +17,20 @@
       "key": "onClick"
     }
   ],
-  "iconName": "refresh",
+  "iconName": "add",
   "isDisabled": false,
   "isLoading": false,
   "isVisible": "true",
   "labelTextSize": "0.875rem",
-  "leftColumn": 60,
-  "onClick": "{{FindQuery.run()}}",
+  "leftColumn": 55,
+  "onClick": "{{showModal('Insert_Modal')}}",
   "parentColumnSpace": 12.0703125,
   "parentId": "59rw5mx0bq",
   "parentRowSpace": 10,
-  "rightColumn": 64,
-  "topRow": 0,
+  "rightColumn": 59,
+  "topRow": 1,
   "type": "ICON_BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "nj85l57r47",
-  "widgetName": "refresh_btn"
+  "widgetId": "atgojamsmw",
+  "widgetName": "add_btn"
 }
