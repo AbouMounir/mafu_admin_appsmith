@@ -22,10 +22,10 @@
     }
   },
   "columnOrder": [
+    "customColumn1",
     "floodScene",
     "floodDescription",
     "floodImage",
-    "_id1",
     "floodLocation",
     "floodDate",
     "floodIntensity",
@@ -34,9 +34,9 @@
     "floodCategory",
     "dataCreatedAt",
     "status",
+    "_id1",
     "__v",
-    "user",
-    "customColumn1"
+    "user"
   ],
   "columnSizeMap": {
     "deliveryAddress": 170,
@@ -45,7 +45,7 @@
     "step": 62,
     "task": 245
   },
-  "columnUpdatedAt": 1729868374160,
+  "columnUpdatedAt": 1735344278627,
   "defaultSelectedRowIndex": "0",
   "delimiter": ",",
   "derivedColumns": {
@@ -74,9 +74,6 @@
   },
   "dynamicBindingPathList": [
     {
-      "key": "primaryColumns.customColumn1.buttonLabel"
-    },
-    {
       "key": "accentColor"
     },
     {
@@ -96,9 +93,6 @@
     },
     {
       "key": "derivedColumns.customColumn1.buttonColor"
-    },
-    {
-      "key": "primaryColumns.customColumn1.computedValue"
     },
     {
       "key": "derivedColumns.customColumn1.computedValue"
@@ -140,13 +134,7 @@
       "key": "primaryColumns.status.computedValue"
     },
     {
-      "key": "primaryColumns.customColumn1.boxShadow"
-    },
-    {
-      "key": "primaryColumns.customColumn1.borderRadius"
-    },
-    {
-      "key": "primaryColumns.customColumn1.buttonColor"
+      "key": "primaryColumns.customColumn1.computedValue"
     },
     {
       "key": "primaryColumns.__v.computedValue"
@@ -166,9 +154,6 @@
   "dynamicTriggerPathList": [
     {
       "key": "onPageChange"
-    },
-    {
-      "key": "primaryColumns.customColumn1.onClick"
     },
     {
       "key": "onSearchTextChanged"
@@ -267,28 +252,35 @@
       "width": 150
     },
     "customColumn1": {
-      "borderRadius": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.borderRadius.appBorderRadius)))}}",
-      "boxShadow": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( \"none\"))}}",
-      "buttonColor": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( (appsmith.theme.colors.primaryColor)))}}",
-      "buttonLabel": "{{data_table.processedTableData.map((currentRow, currentIndex) => { return 'Delete'})}}",
-      "buttonLabelColor": "#FFFFFF",
-      "columnType": "button",
-      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentRow.customColumn1))}}",
-      "customAlias": "",
+      "alias": "id",
+      "allowCellWrapping": false,
+      "allowSameOptionsInNewRow": true,
+      "buttonStyle": "rgb(3, 179, 101)",
+      "columnType": "number",
+      "computedValue": "{{data_table.processedTableData.map((currentRow, currentIndex) => ( currentIndex))}}",
+      "currencyCode": "USD",
+      "decimals": 0,
       "enableFilter": true,
       "enableSort": true,
-      "horizontalAlignment": "LEFT",
-      "iconName": "",
+      "horizontalAlignment": "RIGHT",
       "id": "customColumn1",
-      "index": 7,
+      "index": 10,
+      "isCellEditable": false,
       "isCellVisible": true,
       "isDerived": true,
       "isDisabled": false,
+      "isDiscardVisible": true,
+      "isEditable": false,
+      "isSaveVisible": true,
       "isVisible": true,
-      "label": "Delete",
-      "onClick": "{{UpdateQuery.run()}}",
-      "sticky": "right",
+      "label": "id",
+      "labelColor": "#FFFFFF",
+      "notation": "standard",
+      "originalId": "customColumn1",
+      "sticky": "",
       "textSize": "0.875rem",
+      "thousandSeparator": true,
+      "validation": {},
       "verticalAlignment": "CENTER",
       "width": 150
     },

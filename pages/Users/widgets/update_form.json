@@ -176,24 +176,6 @@
     },
     {
       "key": "schema.__root_schema__.children.userNumber.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.image.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.image.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.image.accentColor"
-    },
-    {
-      "key": "schema.__root_schema__.children.mailProfil.defaultValue"
-    },
-    {
-      "key": "schema.__root_schema__.children.mailProfil.borderRadius"
-    },
-    {
-      "key": "schema.__root_schema__.children.mailProfil.accentColor"
     }
   ],
   "dynamicHeight": "FIXED",
@@ -257,9 +239,9 @@
           "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
           "boxShadow": "none",
           "children": {},
-          "dataType": "string",
+          "dataType": "number",
           "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.__v))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
+          "fieldType": "Number Input",
           "iconAlign": "left",
           "identifier": "__v",
           "isCustomField": false,
@@ -271,51 +253,7 @@
           "labelTextSize": "0.875rem",
           "originalIdentifier": "__v",
           "position": 2,
-          "sourceData": ""
-        },
-        "image": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "image",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.image))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "image",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Image",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "image",
-          "position": 6,
-          "sourceData": ""
-        },
-        "mailProfil": {
-          "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "accessor": "mailProfil",
-          "borderRadius": "{{((sourceData, formData, fieldState) => ((appsmith.theme.borderRadius.appBorderRadius)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "boxShadow": "none",
-          "children": {},
-          "dataType": "string",
-          "defaultValue": "{{((sourceData, formData, fieldState) => (sourceData.mailProfil))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
-          "fieldType": "Text Input",
-          "iconAlign": "left",
-          "identifier": "mailProfil",
-          "isCustomField": false,
-          "isDisabled": false,
-          "isRequired": false,
-          "isSpellCheck": false,
-          "isVisible": true,
-          "label": "Mail Profil",
-          "labelTextSize": "0.875rem",
-          "originalIdentifier": "mailProfil",
-          "position": 7,
-          "sourceData": ""
+          "sourceData": 0
         },
         "userEmail": {
           "accentColor": "{{((sourceData, formData, fieldState) => ((appsmith.theme.colors.primaryColor)))(update_form.sourceData, update_form.formData, update_form.fieldState)}}",
